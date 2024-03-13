@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>HW2</title>
+  </head>
+  <body>
+    <header class="header center">
+      <div class="header__left">
+        <a href="index.html"
+          ><img src="img/Logo.svg" alt="header_logo" /><span>Interno</span></a
+        >
+      </div>
+      <div class="header__right">
+        <a href="index.html">Home</a>
+        <a href="#Projects">Project</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </header>
+    <section class="blog__banner">
+      <div class="blog__banner-intro">
+        <h1 class="blog__banner-heading">Articles & News</h1>
+        <p class="blog__banner-nav">Home / Blog</p>
+      </div>
+    </section>
+    <section class="latestPost center">
+      <h2 class="latestPost__heading">Latest Post</h2>
+      <div class="latestPost__container">
+        <img
+          class="latestPost__image"
+          src="img/latestPost.svg"
+          alt="latestpostImg"
+        />
+        <div class="latestPost__content">
+          <h3 class="latestPost__content-heading">
+            Low Cost Latest Invented Interior Designing Ideas
+          </h3>
+          <p class="latestPost__content-text">
+            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis
+            dignissim maximus.posuere in.Contrary to popular belief.<br /><br />Lorem
+            Ipsum is not simply random text. It has roots in a piece of
+            classica.
+          </p>
+          <div class="latestPost__content-button">
+            <p class="latestPost__content-date">26 December, 2022</p>
+            <div class="latestPost__content-btn">
+              <img src="img/Vector.svg" alt="vector" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="blog center">
+      <h2 class="blog__heading-title">Articles & News</h2>
+      <div class="blog__cards">
+        <div v-for="(card, index) in cards" :key="index" class="blog__card">
+          <div class="blog__card-image">
+            <img class="blog__card-img" :src="card.src" alt="blog_img" />
+            <div class="blog__card-tag">{{card.tag}}</div>
+          </div>
+          <div class="blog__card-content">
+            <h3 style="white-space:pre-wrap;" class="blog__card-logo">{{card.logo}}</h3>
+            <p class="blog__card-date">{{card.date}}</p>
+            <div class="blog__card-btn">
+              <img src="img/Vector.svg" alt="vector" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__main-logo">
+          <a href="index.html"
+            ><img src="img/Logo.svg" alt="footer_logo" /><span>Interno</span></a
+          >
+        </div>
+        <p class="footer__main-text">
+          It is a long established fact that a reader will be distracted
+          lookings.
+        </p>
+        <div class="footer__main-social">
+          <a href="#"><img src="img/twitter.svg" alt="twitter" /></a>
+          <a href="#"><img src="img/instagram.svg" alt="instagram" /></a>
+        </div>
+      </div>
+      <div class="footer__menu">
+        <h3 class="footer__menu-title">Pages</h3>
+        <a href="index.html">Home</a>
+        <a href="#Projects">Project</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer__contacts">
+        <h3 class="footer__contacts-title">Contact</h3>
+        <p class="footer__contacts-text">
+          55 East Birchwood Ave. Brooklyn, New York 11201
+        </p>
+        <p class="footer__contacts-text">contact@interno.com</p>
+        <p class="footer__contacts-text">(123) 456 - 7890</p>
+      </div>
+    </footer>
+
+    <script>
+      new Vue({
+        el: "#blog",
+        data: {
+          cards: [
+            {
+              src: "img/card1.svg",
+              tag: "Kitchen Design",
+              logo: "Larguments.lengthet’s Get Solution For Building Construction\nWork",
+              date: "22 December, 2022",
+            },
+            {
+              src: "img/card2.svg",
+              tag: "Living Design",
+              logo: "Low Cost Latest Invented Interior Designing\nIdeas.",
+              date: "22 December, 2024",
+            },
+            {
+              src: "img/card3.svg",
+              tag: "Interior Design",
+              logo: "Best For Any Office & Business Interior\nSolution",
+              date: "03 July, 2024",
+            },
+            {
+              src: "img/card4.svg",
+              tag: "Kitchen Design",
+              logo: "Let’s Get Solution For Building Construction\nWork",
+              date: "22 October, 2022",
+            },
+            {
+              src: "img/card5.svg",
+              tag: "Living Design",
+              logo: "Low Cost Latest Invented Interior Designing\nIdeas.",
+              date: "22 April, 2024",
+            },
+            {
+              src: "img/card6.svg",
+              tag: "Interior Design",
+              logo: "Best For Any Office & Business Interior\nSolution",
+              date: "03 August, 2023",
+            },
+          ],
+        },
+        
+      });
+    </script>
+  </body>
+</html>

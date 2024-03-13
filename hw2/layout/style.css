@@ -1,0 +1,555 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px;
+}
+.header__left {
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 40px;
+  display: flex;
+}
+.header__left img {
+  height: 34px;
+  width: 34px;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.header__left span {
+  color: #292f36;
+}
+.header__right {
+  display: flex;
+  gap: 30px;
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.header__right a {
+  color: #292f36;
+}
+
+.footer {
+  margin: 100px auto 150px auto;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__main-logo img {
+  height: 34px;
+  width: 34px;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.footer__main-logo span {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  color: #292f36;
+}
+.footer__main-text {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.footer__main-social {
+  margin-top: 15px;
+  display: flex;
+  gap: 50px;
+}
+.footer__menu {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__menu-title {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer__menu a {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+}
+.footer__contacts {
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__contacts-title {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer__contacts-text {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+}
+
+.blog__banner {
+  background-image: url(img/blogBanner.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 356px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.blog__banner-intro {
+  width: 503px;
+  height: 178px;
+  background-color: #fff;
+  border-radius: 37px 37px 0px 0px;
+  padding: 41px 78px 41px 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.blog__banner-heading {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+}
+.blog__banner-nav {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+
+.latestPost {
+  margin-top: 200px;
+}
+.latestPost__heading {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.latestPost__container {
+  margin-top: 27px;
+  padding: 22px;
+  display: flex;
+  gap: 65px;
+}
+.latestPost__image {
+  border-radius: 37px;
+  width: 50%;
+}
+.latestPost__content {
+  width: 50%;
+  padding: 52px 12px 52px 0px;
+}
+.latestPost__content-heading {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+}
+.latestPost__content-text {
+  margin-top: 22px;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.latestPost__content-button {
+  margin-top: 22px;
+  position: relative;
+}
+.latestPost__content-date {
+  margin-top: 52px;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.latestPost__content-btn {
+  background-color: #F4F0EC;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+}
+
+html,
+body,
+div,
+img,
+a,
+hr,
+p,
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea,
+button {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: none;
+  vertical-align: top;
+  transition: none;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+  color: #292f36;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.promo {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  margin-top: 40px;
+  background-image: url(img/PromoBG.svg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 758px;
+  border-radius: 80px 80px 0px 80px;
+  display: flex;
+  align-items: center;
+}
+.promo__heading {
+  min-width: 434px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-left: 50px;
+}
+.promo__heading-title {
+  font-size: 65px;
+  line-height: 81.25px;
+}
+.promo__heading-text {
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.promo__heading-btn {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: #292f36;
+  border-radius: 18px;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.3490196078);
+  padding: 26px 49px 26px 48px;
+  width: 220px;
+  height: 75px;
+  cursor: pointer;
+}
+.promo__heading-btn a {
+  color: #ffffff;
+}
+.promo__heading-btn img {
+  padding-top: 2px;
+}
+
+.projects {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  margin-top: 93px;
+  text-align: center;
+}
+.projects__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.projects__heading-title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.projects__heading-desc {
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 737px;
+}
+.projects__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 46px;
+  margin-top: 50px;
+}
+.projects__card:first-child .projects__card-img img {
+  border-radius: 0px 70px 0px 0px;
+}
+.projects__card:nth-child(2) .projects__card-img img {
+  border-radius: 70px 0px 0px 0px;
+}
+.projects__card:nth-child(3) .projects__card-img img {
+  border-radius: 0px 0px 70px 0px;
+}
+.projects__card:last-child .projects__card-img img {
+  border-radius: 0px 0px 0px 70px;
+}
+.projects__card:first-child, .projects__card:nth-child(3) {
+  margin-right: 21px;
+}
+.projects__card:nth-child(2), .projects__card:last-child {
+  margin-left: 21px;
+}
+.projects__card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.projects__card-content_title {
+  padding-top: 3px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.projects__card-content_desc {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+.projects__card-content_btn {
+  background-color: #f4f0ec;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievements {
+  margin-top: 93px;
+  background-color: #f4f0ec;
+  height: 457px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.achievements__card {
+  width: 100%;
+}
+.achievements__card:not(:last-child) {
+  border-right: 1px solid #cda274;
+}
+.achievements__card-title {
+  font-size: 85px;
+  font-weight: 400;
+  line-height: 106px;
+  letter-spacing: 0.02em;
+  color: #cda274;
+}
+.achievements__card-desc {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+
+.blog {
+  margin-top: 93px;
+}
+.blog__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.blog__heading-title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+}
+.blog__heading-desc {
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.blog__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+.blog__card {
+  border: 1px solid #e7e7e7;
+  border-radius: 70px;
+  transition: 0.5s all ease;
+  text-align: center;
+  cursor: pointer;
+}
+.blog__card:hover {
+  background-color: #f4f0ec;
+}
+.blog__card:hover .blog__card-btn {
+  background-color: #ffffff;
+}
+.blog__card-image {
+  position: relative;
+}
+.blog__card-img {
+  border-radius: 70px 70px 0px 0px;
+  padding: 20px 10px 0px 10px;
+  height: 290px;
+  width: 340px;
+}
+.blog__card-tag {
+  position: absolute;
+  width: 124px;
+  height: 41px;
+  background-color: #fff;
+  bottom: 15px;
+  left: 40px;
+  border-radius: 8px 8px 8px 0px;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog__card-content {
+  padding: 20px;
+  position: relative;
+}
+.blog__card-logo {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  max-width: 305px;
+}
+.blog__card-date {
+  padding-top: 35px;
+  padding-bottom: 20px;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+}
+.blog__card-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all ease;
+}/*# sourceMappingURL=style.css.map */

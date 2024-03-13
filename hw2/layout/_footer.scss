@@ -1,0 +1,94 @@
+
+.footer {
+    margin: 100px auto 150px auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      &-logo img {
+        height: 34px;
+        width: 34px;
+        margin-top: 8px;
+        margin-right: 10px;
+      }
+  
+      &-logo span {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: 0em;
+        color: #292f36;
+      }
+  
+      &-text {
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        color: #4d5053;
+      }
+  
+      &-social {
+        margin-top: 15px;
+        display: flex;
+        gap: 50px;
+      }
+    }
+  
+    &__menu {
+      padding-left: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      &-title {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+  
+      & a {
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #4d5053;
+      }
+    }
+  
+    &__contacts {
+      padding-left: 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  
+      &-title {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+  
+      &-text {
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #4d5053;
+      }
+    }
+  }
+  
